@@ -1,0 +1,93 @@
+.collection-card {
+  cursor: pointer;
+  border-left: 4px solid var(--accent);
+}
+
+.card-icon {
+  color: var(--accent);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.meta { margin-top: .6rem; color: var(--muted); font-size: .85rem; }
+
+.table-wrap {
+  overflow: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+table { width: 100%; min-width: 600px; border-collapse: collapse; }
+
+th, td {
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--panel2);
+  color: var(--cyan2);
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+tr:hover td { background: rgba(54, 197, 240, .04); }
+
+.form-grid { display: grid; gap: .9rem; }
+.field { display: grid; gap: .35rem; }
+.field span { color: var(--muted); font-size: .8rem; }
+
+input, select, textarea {
+  width: 100%;
+  padding: .6rem .7rem;
+  color: var(--text);
+  background: #09111b;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.check { display: flex; align-items: center; gap: .5rem; }
+.check input { width: auto; }
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  margin-top: .6rem;
+}
+
+.tabs {
+  display: flex;
+  gap: .4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.tabs button { border-radius: 8px 8px 0 0; border-bottom: none; }
+.tabs button.active { background: var(--panel2); color: var(--cyan2); border-color: var(--cyan); }
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+}
+
+.list { display: grid; gap: .5rem; }
+.list-item { display: grid; gap: .2rem; padding: .75rem; text-align: left; }
+.list-item small { color: var(--muted); }
+
+.detail { display: grid; gap: .6rem; }
+.detail-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--line);
+}

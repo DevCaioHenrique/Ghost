@@ -1,0 +1,105 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.4rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(8, 12, 18, .82);
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: .18em;
+  color: var(--cyan2);
+}
+
+.ghost-mark { color: var(--cyan); }
+
+#nav { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+#nav button.active {
+  border-color: var(--cyan);
+  color: var(--cyan2);
+  box-shadow: 0 0 12px rgba(54, 197, 240, .2);
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.4rem;
+}
+
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.page-head h1 { margin: .2rem 0; font-size: 1.8rem; }
+.actions, .row-actions, .page-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, .65);
+}
+
+.modal {
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, .6);
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-body { padding: 1.2rem; }
+
+.toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  padding: .8rem 1rem;
+  border: 1px solid var(--cyan);
+  border-radius: 10px;
+  background: var(--panel2);
+}
+
+.toast.error { border-color: var(--danger); color: var(--danger); }
